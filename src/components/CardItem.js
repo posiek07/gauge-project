@@ -1,6 +1,6 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Button, Card } from 'react-native-paper';
+import React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { Button, Card } from "react-native-paper"
 
 const CardItem = ({ title, score, subtitle, callback }) => {
   return (
@@ -15,25 +15,25 @@ const CardItem = ({ title, score, subtitle, callback }) => {
         <Button onPress={() => callback()}>Improve your score</Button>
       </Card.Actions>
     </Card>
-  );
-};
+  )
+}
 
-export default CardItem;
+export default CardItem
 
 const styles = StyleSheet.create({
   cardWrapper: {
     margin: 20,
   },
   scoreWrapper: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'flex-end',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "flex-end",
   },
   score: {
     fontSize: 60,
-    textAlign: 'center',
+    textAlign: "center",
   },
   scoreMax: {
-    color: 'red',
+    color: "red",
   },
-});
+})
